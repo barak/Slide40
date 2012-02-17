@@ -313,7 +313,7 @@ class Presentation {
 	 */
 	public String openFile(String fileName) {
 		
-		ArrayList lineList = new ArrayList();
+		ArrayList<String> lineList = new ArrayList<String>();
 		
 		try {
 			
@@ -355,7 +355,7 @@ class Presentation {
 		
 		// We're read and parsed the file.  Make its data
 		// our current presentation.
-		lines = (String [])lineList.toArray(new String[lineList.size()]);
+		lines = lineList.toArray(new String[lineList.size()]);
 		numLines = lineList.size();
 		numSlides = (int)Math.ceil((double)lineList.size() / (double)Terminal.cheight);
 		currentSlide = 0;

@@ -297,6 +297,7 @@ class SlideForty {
 	 * @param args command line arguments (unused)
 	 */
 	public static void main(String args[]) {
-		SlideForty app = new SlideForty();
+		new SlideForty();
+		// SlideForty app = new SlideForty();
 	}
 }
