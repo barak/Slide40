@@ -112,6 +112,6 @@ class Alphabet {
 		// Replace chars for which we have no glyph with space.
 		if (c < minGlyph) c = ' ';
 		if (c > maxGlyph) c = ' ';
-		return glyphs[((int)(c - minGlyph))];
+		return glyphs[c - minGlyph];
 	}
 }

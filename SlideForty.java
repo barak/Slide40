@@ -194,8 +194,8 @@ class SlideForty {
 		 */
 		public void componentResized(ComponentEvent e) {
 			boolean needSetSize = false;    // set iff we need to correct size
-			int minWidth = (int)((double)Terminal.twidth * 1.25);
-			int minHeight = (int)((double)Terminal.theight * 1.5);
+			int minWidth = (int)(Terminal.twidth * 1.25);
+			int minHeight = (int)(Terminal.theight * 1.5);
 			Dimension dim = theApp.theFrame.getSize();
 			if (dim.width < minWidth) {
 				dim.width = minWidth;
